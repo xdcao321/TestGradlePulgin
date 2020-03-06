@@ -1,0 +1,5 @@
+rootProject.name = 'TestGradlePulgin'
+include 'java'
+include 'webapp'
+include 'resources'
+

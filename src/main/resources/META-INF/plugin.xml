@@ -1,0 +1,56 @@
+<idea-plugin>
+    <id>cn.xdcao.TestGradlePulgin</id>
+    <name>xdcao</name>
+    <vendor email="xdcao321@gamil.com" url="">Topgun</vendor>
+
+    <description><![CDATA[
+    Plugin Test<br>
+    第一行：单纯只是个测试<br>
+    第二行：都说了只是个测试(●￣(ｴ)￣●)<br>
+    <a href='https://www.bilibili.com'>你猜猜这是哪个网站？</a>
+    <em>v1.0</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- 组件接口 -->
+        <interface-class>cn.IconFactory</interface-class>
+        <!-- 组件的实现类 -->
+    </application-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <!--下面的group是分组，分组需要有一个唯一的id标识，text用来控制分组出现在IDEA时呈现的文案，description是描述，不会展现出来，简单描述下分组就行-->
+        <group id="TestGradlePilgin" text="3DE" description="3DE">
+            <!--add-to-group控制把该分组加到IDEA里，group-id用来描述加在哪个位置，MainMenu表示加在IDEA上方的主菜单栏里，
+            anchor表示顺序，last表示最后一个，所以下面的配置可以描述为：将该插件加到IDEA上方主菜单栏的最后一位-->
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <!--这个用来指定一个分组下的触发动作，同样的需要一个id，自定义；class就是用来处理这个动作的逻辑类，具体的插件逻辑都会写到对应的action类里，text用来控制文案，description为描述-->
+            <action id="cn.xdcao.matrix.action.Connect"
+                    class="cn.xdcao.matrix.action.Connect3DE"
+                    text="Connect to 3DE" description="EasyJPO"
+                    icon="/icons/connect.png"/>
+            <action id="cn.xdcao.matrix.action.Disconnect"
+                    class="cn.xdcao.matrix.action.DissConnect3DE"
+                    text="DisConnect to 3DE" description="EasyJPO"
+                    icon="/icons/disconnect.png"/>
+            <action id="cn.xdcao.matrix.action.import"
+                    class="cn.xdcao.matrix.action.ImportProg"
+                    text="Import Prog" description="EasyJPO"
+                    icon="/icons/import.png"/>
+            <action id="cn.xdcao.matrix.action.update"
+                    class="cn.xdcao.matrix.action.UpdateProgram"
+                    text="update Prog" description="EasyJPO"
+                    icon="/icons/update.png"/>
+
+        </group>
+
+    </actions>
+</idea-plugin>
