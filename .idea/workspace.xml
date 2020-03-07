@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f92c349-7696-4f8d-a159-c3adcf04006e" name="Default Changelist" comment="" />
+    <list default="true" id="7f92c349-7696-4f8d-a159-c3adcf04006e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -142,11 +146,24 @@
       <workItem from="1583459535470" duration="11225000" />
       <workItem from="1583472268053" duration="3498000" />
       <workItem from="1583481300349" duration="24785000" />
+      <workItem from="1583545565700" duration="353000" />
     </task>
+    <task id="LOCAL-00001" summary="备注修改">
+      <created>1583545840522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583545840522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="备注修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="备注修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="400" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583502640724">
@@ -173,10 +190,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583496117651" />
-    <state x="476" y="31" key="CommitChangelistDialog2" timestamp="1583545755313">
+    <state x="476" y="31" key="CommitChangelistDialog2" timestamp="1583545839163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="476" y="31" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583545755313" />
+    <state x="476" y="31" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583545839163" />
     <state x="571" y="274" key="FileChooserDialogImpl" timestamp="1583486579888">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -217,6 +234,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="332" y="137" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1583504690383" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1583545843802">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583545843802" />
     <state x="740" y="311" key="chooseDestDirectoryDialog" timestamp="1583481830599">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
