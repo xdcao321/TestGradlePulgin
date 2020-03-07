@@ -21,8 +21,6 @@
 
     <application-components>
         <!-- 组件接口 -->
-        <interface-class>cn.IconFactory</interface-class>
-        <!-- 组件的实现类 -->
     </application-components>
 
     <actions>
@@ -32,19 +30,24 @@
             <!--add-to-group控制把该分组加到IDEA里，group-id用来描述加在哪个位置，MainMenu表示加在IDEA上方的主菜单栏里，
             anchor表示顺序，last表示最后一个，所以下面的配置可以描述为：将该插件加到IDEA上方主菜单栏的最后一位-->
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <!--这个用来指定一个分组下的触发动作，同样的需要一个id，自定义；class就是用来处理这个动作的逻辑类，具体的插件逻辑都会写到对应的action类里，text用来控制文案，description为描述-->
+            <!--action 这个用来指定一个分组下的触发动作，同样的需要一个id，自定义；class就是用来处理这个动作的逻辑类，具体的插件逻辑都会写到对应的action类里，text用来控制文案，description为描述-->
+
+            <!-- Connect to 3DE -->
             <action id="cn.xdcao.matrix.action.Connect"
                     class="cn.xdcao.matrix.action.Connect3DE"
                     text="Connect to 3DE" description="EasyJPO"
                     icon="/icons/connect.png"/>
+            <!-- DisConnect to 3DE -->
             <action id="cn.xdcao.matrix.action.Disconnect"
                     class="cn.xdcao.matrix.action.DissConnect3DE"
                     text="DisConnect to 3DE" description="EasyJPO"
                     icon="/icons/disconnect.png"/>
+            <!-- import JPO -->
             <action id="cn.xdcao.matrix.action.import"
                     class="cn.xdcao.matrix.action.ImportProg"
                     text="Import Prog" description="EasyJPO"
                     icon="/icons/import.png"/>
+            <!-- update JPO -->
             <action id="cn.xdcao.matrix.action.update"
                     class="cn.xdcao.matrix.action.UpdateProgram"
                     text="update Prog" description="EasyJPO"
