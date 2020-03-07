@@ -7,7 +7,7 @@ import javax.swing.*;
  * @version 1.0.0
  * @ClassName ConnectForm.java
  * @Description TODO
- * @createTime 2020年03月06日 22:01:00
+ * @date 2020年03月06日 22:01:00
  */
 public class ConnectForm {
     private JPanel mainPonel;

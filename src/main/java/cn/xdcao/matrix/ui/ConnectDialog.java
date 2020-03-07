@@ -11,7 +11,7 @@ import javax.swing.*;
  * @version 1.0.0
  * @ClassName ConnectDialog.java
  * @Description TODO
- * @createTime 2020年03月06日 17:49:00
+ * @date 2020年03月06日 17:49:00
  */
 public class ConnectDialog extends DialogWrapper {
     /**
