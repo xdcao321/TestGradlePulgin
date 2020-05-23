@@ -71,6 +71,7 @@
   </configurable>
   <configurable id="preferences.keymap" configurable_name="Keymap">
     <option name="" path="ActionManager" hit="" />
+    <option name="3de" path="ActionManager" hit="3DE" />
     <option name="accept" path="ActionManager" hit="Accept Left Side" />
     <option name="left" path="ActionManager" hit="Accept Left Side" />
     <option name="side" path="ActionManager" hit="Accept Left Side" />

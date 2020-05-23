@@ -11,7 +11,7 @@ import javax.swing.*;
  * @Description TODO
  * @date 2020年03月06日 19:05:00
  */
-public class MatrixIcons {
+public final class  MatrixIcons {
 
     private static Icon load(String path){
         return IconLoader.getIcon(path,MatrixIcons.class);

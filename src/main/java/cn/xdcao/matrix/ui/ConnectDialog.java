@@ -10,10 +10,12 @@ import javax.swing.*;
  * @author xd.cao
  * @version 1.0.0
  * @ClassName ConnectDialog.java
- * @Description TODO
+ * @Description 创建对话框
  * @date 2020年03月06日 17:49:00
  */
 public class ConnectDialog extends DialogWrapper {
+
+    private ConnectForm connectForm = new ConnectForm();
     /**
      * Creates modal {@code DialogWrapper}. The currently active window will be the dialog's parent.
      *
@@ -28,12 +30,14 @@ public class ConnectDialog extends DialogWrapper {
         super(project, canBeParent);
     }
 
-    public ConnectDialog() {
+    public ConnectDialog(Project project) {
         super(true);
         init();
         setResizable(false);
         setTitle("Connect to 3de");
     }
+
+
 
     /**
      * Factory method. It creates panel with dialog options. Options panel is located at the
@@ -43,19 +47,24 @@ public class ConnectDialog extends DialogWrapper {
     @Nullable
     @Override
     protected JComponent createCenterPanel() {
-       ConnectForm connectForm = new ConnectForm();
-        return connectForm.getMainPonel();
+        return connectForm.initCenter();
     }
 
+
+
     /**
-     * Creates panel located at the south of the content pane. By default that
-     * panel contains dialog's buttons. This default implementation uses {@code createActions()}
-     * and {@code createJButtonForAction(Action)} methods to construct the panel.
-     *
-     * @return south panel
+     * 特别说明：不需要展示SouthPanel要重写返回null，否则IDEA将展示默认的"Cancel"和"OK"按钮
      */
     @Override
     protected JComponent createSouthPanel() {
+
+        JButton canalButton = connectForm.getCanalButton();
+        canalButton.addActionListener(e -> {
+
+        });
+
         return null;
     }
+
+
 }

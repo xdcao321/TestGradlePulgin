@@ -1,8 +1,12 @@
 <idea-plugin>
+    <!-- 插件id -->
     <id>cn.xdcao.TestGradlePulgin</id>
-    <name>xdcao</name>
+    <!-- 插件名称 -->
+    <name>easyDeveloper</name>
+    <!-- 开发者信息 -->
     <vendor email="xdcao321@gamil.com" url="">Topgun</vendor>
 
+    <!-- 插件说明 -->
     <description><![CDATA[
     Plugin Test<br>
     第一行：大家好<br>
@@ -15,6 +19,7 @@
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
+    <!--依赖的其他插件能力-->
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
@@ -23,6 +28,7 @@
         <!-- 组件接口 -->
     </application-components>
 
+    <!--插件动作-->
     <actions>
         <!-- Add your actions here -->
         <!--下面的group是分组，分组需要有一个唯一的id标识，text用来控制分组出现在IDEA时呈现的文案，description是描述，不会展现出来，简单描述下分组就行-->
@@ -35,8 +41,7 @@
             <!-- Connect to 3DE -->
             <action id="cn.xdcao.matrix.action.Connect"
                     class="cn.xdcao.matrix.action.Connect3DE"
-                    text="Connect to 3DE" description="EasyJPO"
-                    icon="/icons/connect.png"/>
+                    />
             <!-- DisConnect to 3DE -->
             <action id="cn.xdcao.matrix.action.Disconnect"
                     class="cn.xdcao.matrix.action.DissConnect3DE"

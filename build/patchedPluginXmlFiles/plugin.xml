@@ -5,24 +5,22 @@
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
   <idea-version since-build="193.6494" until-build="193.*"/>
   <id>cn.xdcao.TestGradlePulgin</id>
-  <name>xdcao</name>
+  <name>easyDeveloper</name>
   <vendor email="xdcao321@gamil.com" url="">Topgun</vendor>
   <description>
     Plugin Test&lt;br&gt;
-    第一行：单纯只是个测试&lt;br&gt;
-    第二行：都说了只是个测试(●￣(ｴ)￣●)&lt;br&gt;
-    &lt;a href='https://www.bilibili.com'&gt;你猜猜这是哪个网站？&lt;/a&gt;
+    第一行：大家好&lt;br&gt;
+    第二行：我是渣渣辉😜&lt;br&gt;
+    &lt;H1&gt;你好哦!&lt;/H1&gt;
     &lt;em&gt;v1.0&lt;/em&gt;
     </description>
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij"/>
-  <application-components>
-    <interface-class>cn.IconFactory</interface-class>
-  </application-components>
+  <application-components/>
   <actions>
     <group id="TestGradlePilgin" text="3DE" description="3DE">
       <add-to-group group-id="MainMenu" anchor="last"/>
-      <action id="cn.xdcao.matrix.action.Connect" class="cn.xdcao.matrix.action.Connect3DE" text="Connect to 3DE" description="EasyJPO" icon="/icons/connect.png"/>
+      <action id="cn.xdcao.matrix.action.Connect" class="cn.xdcao.matrix.action.Connect3DE"/>
       <action id="cn.xdcao.matrix.action.Disconnect" class="cn.xdcao.matrix.action.DissConnect3DE" text="DisConnect to 3DE" description="EasyJPO" icon="/icons/disconnect.png"/>
       <action id="cn.xdcao.matrix.action.import" class="cn.xdcao.matrix.action.ImportProg" text="Import Prog" description="EasyJPO" icon="/icons/import.png"/>
       <action id="cn.xdcao.matrix.action.update" class="cn.xdcao.matrix.action.UpdateProgram" text="update Prog" description="EasyJPO" icon="/icons/update.png"/>

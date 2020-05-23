@@ -2,6 +2,8 @@ package cn.xdcao.matrix.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import org.jetbrains.annotations.NotNull;
 
@@ -20,7 +22,21 @@ public class DissConnect3DE extends AnAction {
      */
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        Messages.showMessageDialog("Hello World !", "Information", Messages.getInformationIcon());
+
+        Project project = e.getData(PlatformDataKeys.PROJECT);
+
+        if (project == null) {
+            return;
+        }
+
+        String txt = Messages.showInputDialog(project,
+                "What is your name?",
+                "Input Your Name",
+                Messages.getQuestionIcon());
+        //显示对话框
+        Messages.showMessageDialog(project,
+                "Hello, " + txt + "!\n I am glad to see you.",
+                "Information", Messages.getInformationIcon());
 
     }
 }
